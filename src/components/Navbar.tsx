@@ -14,21 +14,7 @@ const Navbar = () => {
                         </Link>
                     </div>
 
-                    {/* Navigation Links */}
-                    <div className="flex items-center space-x-10 text-white font-medium text-lg">
-                        <Link
-                            to="/about"
-                            className="hover:text-[#34d399] hover:scale-110 transition-all duration-300 transform"
-                        >
-                            About
-                        </Link>
-                        <Link
-                            to="/user/login"
-                            className="hover:text-[#34d399] hover:scale-110 transition-all duration-300 transform"
-                        >
-                            Login
-                        </Link>
-                    </div>
+
                 </div>
             </header>
         </>

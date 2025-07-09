@@ -36,7 +36,7 @@ Password: 123
 Frontend/
 ├── components/ # Reusable components like forms, navbar, etc.
 ├── pages/ # Main pages like Login and Dashboard
-├── data/ #mock json files
+├── data/ #mock json filess
 ├── App.tsx # Application entry and routing
 ├── main.tsx # Main render file
 ├── index.css # Tailwind CSS base file
