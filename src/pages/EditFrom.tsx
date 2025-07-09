@@ -17,7 +17,7 @@ const EditForm = () => {
     useEffect(() => {
         const fetchUser = async () => {
             try {
-                const res = await axios.post(`http://localhost:3002/user/details/${id}`);
+                const res = await axios.post(`https://nkassapi.sashverse.com/user/details/${id}`);
                 const user = res.data;
                 setName(user.name);
                 setEmail(user.email);
@@ -39,7 +39,7 @@ const EditForm = () => {
         setSuccess('');
 
         try {
-            await axios.put(`http://localhost:3002/user/update/${id}`, {
+            await axios.put(`https://nkassapi.sashverse.com/user/update/${id}`, {
                 name,
                 email,
                 profession,

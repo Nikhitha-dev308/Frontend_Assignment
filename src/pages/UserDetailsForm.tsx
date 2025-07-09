@@ -19,7 +19,7 @@ const UserDetailsForm = () => {
         setSuccess('');
         try {
             const response = await axios.post(
-                'http://localhost:3002/user/details',
+                'https://nkassapi.sashverse.com/user/details',
                 { name, email, profession, status },
                 { headers: { 'Content-Type': 'application/json' } }
             );

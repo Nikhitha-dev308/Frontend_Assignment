@@ -20,7 +20,7 @@ const Dashboard = () => {
     useEffect(() => {
         const fetchUsers = async () => {
             try {
-                const response = await axios.get('http://localhost:3002/user/details');
+                const response = await axios.get('https://nkassapi.sashverse.com/user/details');
                 setUsers(response.data);
                 console.log("Fetched users:", response.data);
             } catch (error: any) {
@@ -39,7 +39,7 @@ const Dashboard = () => {
         if (!window.confirm("Are you sure you want to delete this user?")) return;
 
         try {
-            await axios.delete(`http://localhost:3002/user/delete/${id}`);
+            await axios.delete(`https://nkassapi.sashverse.com/user/delete/${id}`);
             alert("User deleted successfully");
             setUsers(prev => prev.filter(user => user._id !== id));
         } catch (err) {
